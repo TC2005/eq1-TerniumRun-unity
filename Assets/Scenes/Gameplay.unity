@@ -3483,7 +3483,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 27
-    m_FontStyle: 0
+    m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 40
@@ -3766,7 +3766,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 8692098715818667583, guid: 54755af69a4d39c4eac40882c8101c48,
+  m_Sprite: {fileID: -5596343367094455332, guid: 752ae7b1947f22f4a93396ccec81d015,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -3809,6 +3809,14 @@ MonoBehaviour:
   speed: 2
   x_max: 1.82
   x_min: -1.82
+  jumpsound: {fileID: 3201402427298883988, guid: 8ff732a063900a245a1fd0919c3b6158,
+    type: 3}
+  destroyjumpsound: {fileID: 7833970436248451099, guid: f64c1caedbead12488001702439525bb,
+    type: 3}
+  hurtsound: {fileID: 2064472824581042902, guid: 9f9be63ab1ac7584b93d464f996f663c,
+    type: 3}
+  fallsound: {fileID: 5200154784478284319, guid: f079c36ab2fed114992877940f1257e2,
+    type: 3}
 --- !u!61 &1252182170
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3826,7 +3834,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.1375, y: 0.2125}
+    oldSize: {x: 0.1625, y: 0.225}
     newSize: {x: 0.15, y: 0.2125}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -3866,7 +3874,7 @@ Animator:
   m_GameObject: {fileID: 1252182166}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 04f15443de0c2424798740066f7c4526, type: 2}
+  m_Controller: {fileID: 9100000, guid: 0398a7a8f4ef3f444a85e6064c986748, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -3934,7 +3942,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 27
-    m_FontStyle: 0
+    m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 2
     m_MaxSize: 278

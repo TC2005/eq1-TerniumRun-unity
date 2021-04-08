@@ -71,6 +71,7 @@
     <Compile Include="Assets\Scripts\moveEnemigo.cs" />
     <Compile Include="Assets\Scripts\moveObject.cs" />
     <Compile Include="Assets\Scripts\puntos_incr.cs" />
+    <Compile Include="Assets\Scripts\sonido.cs" />
     <None Include="Assets\BayatGames\Free Platform Game Assets\Readme.txt" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
