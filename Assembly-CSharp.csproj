@@ -64,8 +64,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\BuscadorPreguntas.cs" />
+    <Compile Include="Assets\Scripts\Feedback.cs" />
+    <Compile Include="Assets\Scripts\Feedback_Aparece.cs" />
     <Compile Include="Assets\Scripts\Generator.cs" />
+    <Compile Include="Assets\Scripts\NoDestruir.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />
+    <Compile Include="Assets\Scripts\Pregunta.cs" />
+    <Compile Include="Assets\Scripts\Respuesta.cs" />
+    <Compile Include="Assets\Scripts\Slider.cs" />
+    <Compile Include="Assets\Scripts\SliderChangeVolumen.cs" />
     <Compile Include="Assets\Scripts\clickplay.cs" />
     <Compile Include="Assets\Scripts\moveAdorno.cs" />
     <Compile Include="Assets\Scripts\moveEnemigo.cs" />
