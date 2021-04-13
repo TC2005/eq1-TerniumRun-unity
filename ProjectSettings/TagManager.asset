@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Enemy
+  - Volumen
+  - Buscador Preguntas
   layers:
   - Default
   - TransparentFX

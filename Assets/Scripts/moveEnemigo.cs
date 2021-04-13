@@ -23,7 +23,7 @@ public class moveEnemigo : MonoBehaviour
     void Update()
     {
         transform.Translate(movement * speed * 100 * Time.deltaTime);
-        if (transform.position.x > x_max || transform.position.y >y_max || transform.position.x < x_min || transform.position.y < y_min)
+        if (transform.position.x > x_max || transform.position.y > y_max || transform.position.x < x_min || transform.position.y < y_min)
         {
             Destroy(gameObject);
         }

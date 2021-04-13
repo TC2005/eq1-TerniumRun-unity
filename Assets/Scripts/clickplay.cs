@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 public class clickplay : MonoBehaviour
 {
     public string nombre_escena;
+    public string modo;
+    GameObject target;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,6 +20,13 @@ public class clickplay : MonoBehaviour
     }
     private void OnMouseDown()
     {
-        SceneManager.LoadScene(nombre_escena, LoadSceneMode.Single);
+        if (modo == "Single")
+        {
+            SceneManager.LoadScene(nombre_escena, LoadSceneMode.Single);
+        }
+        else if (modo == "Additive")
+        {
+            SceneManager.LoadScene(nombre_escena, LoadSceneMode.Additive);
+        }
     }
 }
