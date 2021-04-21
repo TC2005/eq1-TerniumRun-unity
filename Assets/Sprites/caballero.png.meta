@@ -20,6 +20,9 @@ TextureImporter:
   - first:
       213: 5769547107962390765
     second: caballero_5
+  - first:
+      213: -6079523332629384781
+    second: caballero_6
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -124,8 +127,8 @@ TextureImporter:
         y: 0
         width: 11
         height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -145,8 +148,8 @@ TextureImporter:
         y: 1
         width: 13
         height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -166,8 +169,8 @@ TextureImporter:
         y: 0
         width: 10
         height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -187,8 +190,8 @@ TextureImporter:
         y: 0
         width: 11
         height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -208,8 +211,8 @@ TextureImporter:
         y: 1
         width: 13
         height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -229,8 +232,8 @@ TextureImporter:
         y: 0
         width: 12
         height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -238,6 +241,27 @@ TextureImporter:
       bones: []
       spriteID: de80bfcb68c811050800000000000000
       internalID: 5769547107962390765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caballero_6
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 0
+        width: 83
+        height: 18
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b13dea5db131aba0800000000000000
+      internalID: -6079523332629384781
       vertices: []
       indices: 
       edges: []

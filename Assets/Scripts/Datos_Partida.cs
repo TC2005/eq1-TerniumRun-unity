@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Networking;
 using UnityEngine.SceneManagement;
 
 public class Datos_Partida : MonoBehaviour
@@ -17,11 +16,10 @@ public class Datos_Partida : MonoBehaviour
     public int penemigos, pdistancia, ppreguntas;
     public bool empezado;
     public int vida;
-// Start is called before the first frame update
+    // Start is called before the first frame update
     void Start()
     {
         restart();
-        StartCoroutine("GetText");
     }
 
     // Update is called once per frame
@@ -48,28 +46,5 @@ public class Datos_Partida : MonoBehaviour
         penemigos = 0;
         pdistancia = 0;
         ppreguntas = 0;
-    }
-    IEnumerator GetText()
-    {
-        string url = "http://localhost:5000/auth/validate-token";
-        /*WWWForm form = new WWWForm();
-        form.AddField("authToken", token);*/
-
-        UnityWebRequest www = UnityWebRequest.Get(url);
-        www.SetRequestHeader("Authorization", "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzaWQiOiJkOWQ1MzRlMy1kMWM2LTQ4ZTQtODMwZS04YjQwZmVhOGJkMjcifQ.p0p65zvOUuURszZHOqi-93qwcLL7uS5sm1LUohKcK6U");
-        yield return www.SendWebRequest();
-
-        if (www.isNetworkError)
-        {
-            Debug.Log(www.error);
-        }
-        else
-        {
-            // Show results as text
-            Debug.Log(www.downloadHandler.text);
-
-            // Or retrieve results as binary data
-            byte[] results = www.downloadHandler.data;
-        }
     }
 }

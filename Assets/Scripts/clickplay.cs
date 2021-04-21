@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Networking;
+
 public class clickplay : MonoBehaviour
 {
     public string nombre_escena;
@@ -24,7 +26,12 @@ public class clickplay : MonoBehaviour
         if (!datosPartida.empezado)
         {
             SceneManager.LoadScene(nombre_escena, LoadSceneMode.Single);
+            if (nombre_escena == "Pantalla de inicio")
+            {
+                GameObject target = GameObject.FindGameObjectWithTag("Volumen");
+                Volumen volumen = target.GetComponent<Volumen>();
+                volumen.actualizaenBD();
+            }
         }
-        
     }
 }

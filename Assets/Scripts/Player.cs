@@ -72,6 +72,10 @@ public class Player : MonoBehaviour
             movement.x *= 0f;
         }
         rb.velocity = new Vector2(movement.x * speed, rb.velocity.y);
+        if (transform.position.y <= -0.4)
+        {
+            transform.position = new Vector3(transform.position.x, -0.28f, 0);
+        }
     }
     private void OnCollisionEnter2D(Collision2D c)
     {

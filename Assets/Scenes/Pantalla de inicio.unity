@@ -5731,6 +5731,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   effectvolumen: 0.5
   musicvolumen: 0.5
+  email: admin@tec.mx
 --- !u!1 &1990067545
 GameObject:
   m_ObjectHideFlags: 0
