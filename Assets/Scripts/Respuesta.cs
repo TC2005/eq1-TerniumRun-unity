@@ -31,7 +31,21 @@ public class Respuesta : MonoBehaviour
     }
     public void clickeado()
     {
-        if (datos.correcta == numero) Debug.Log("Correcto");
-        else Debug.Log("Incorrecto");
+        GameObject target = GameObject.FindGameObjectWithTag("Datos");
+        Datos_Partida datosPartida = target.GetComponent<Datos_Partida>();
+        if (datos.correcta == numero+1)
+        {
+            datosPartida.rcorrecto++;
+            datosPartida.rhechas++;
+            Debug.Log("Correcto");
+        }
+        else
+        {
+            datosPartida.rincorrecto++;
+            datosPartida.vida--;
+            datosPartida.rhechas++;
+            Debug.Log("Incorrecto");
+        } 
+            
     }
 }

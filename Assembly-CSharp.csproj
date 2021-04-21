@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{B42D51CD-F156-BBD1-E62A-E7E34F63FA9E}</ProjectGuid>
+    <ProjectGuid>{6D7AA3C4-AB10-EB61-01A0-6B26E1452F45}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -65,6 +65,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\BuscadorPreguntas.cs" />
+    <Compile Include="Assets\Scripts\Datos_Partida.cs" />
     <Compile Include="Assets\Scripts\Feedback.cs" />
     <Compile Include="Assets\Scripts\Feedback_Aparece.cs" />
     <Compile Include="Assets\Scripts\Generator.cs" />
@@ -74,12 +75,16 @@
     <Compile Include="Assets\Scripts\Respuesta.cs" />
     <Compile Include="Assets\Scripts\Slider.cs" />
     <Compile Include="Assets\Scripts\SliderChangeVolumen.cs" />
+    <Compile Include="Assets\Scripts\Volumen.cs" />
+    <Compile Include="Assets\Scripts\abrirTrivia.cs" />
+    <Compile Include="Assets\Scripts\barratiempo.cs" />
     <Compile Include="Assets\Scripts\clickplay.cs" />
     <Compile Include="Assets\Scripts\moveAdorno.cs" />
     <Compile Include="Assets\Scripts\moveEnemigo.cs" />
     <Compile Include="Assets\Scripts\moveObject.cs" />
     <Compile Include="Assets\Scripts\puntos_incr.cs" />
     <Compile Include="Assets\Scripts\sonido.cs" />
+    <Compile Include="Assets\botontipo.cs" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
@@ -609,85 +614,85 @@
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.19f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>C:/Users/danie/OneDrive/Documentos/Unity Project/Ternium Run/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>C:/Users/danie/OneDrive/Documentos/GitHub/eq1-TerniumRun-unity/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Animation.Runtime">
-      <HintPath>C:/Users/danie/OneDrive/Documentos/Unity Project/Ternium Run/Library/ScriptAssemblies/Unity.2D.Animation.Runtime.dll</HintPath>
+      <HintPath>C:/Users/danie/OneDrive/Documentos/GitHub/eq1-TerniumRun-unity/Library/ScriptAssemblies/Unity.2D.Animation.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.PixelPerfect.Editor">
-      <HintPath>C:/Users/danie/OneDrive/Documentos/Unity Project/Ternium Run/Library/ScriptAssemblies/Unity.2D.PixelPerfect.Editor.dll</HintPath>
+      <HintPath>C:/Users/danie/OneDrive/Documentos/GitHub/eq1-TerniumRun-unity/Library/ScriptAssemblies/Unity.2D.PixelPerfect.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-      <HintPath>C:/Users/danie/OneDrive/Documentos/Unity Project/Ternium Run/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+      <HintPath>C:/Users/danie/OneDrive/Documentos/GitHub/eq1-TerniumRun-unity/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.SpriteShape.Editor">
-      <HintPath>C:/Users/danie/OneDrive/Documentos/Unity Project/Ternium Run/Library/ScriptAssemblies/Unity.2D.SpriteShape.Editor.dll</HintPath>
+      <HintPath>C:/Users/danie/OneDrive/Documentos/GitHub/eq1-TerniumRun-unity/Library/ScriptAssemblies/Unity.2D.SpriteShape.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:/Users/danie/OneDrive/Documentos/Unity Project/Ternium Run/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:/Users/danie/OneDrive/Documentos/GitHub/eq1-TerniumRun-unity/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Path.Editor">
-      <HintPath>C:/Users/danie/OneDrive/Documentos/Unity Project/Ternium Run/Library/ScriptAssemblies/Unity.2D.Path.Editor.dll</HintPath>
+      <HintPath>C:/Users/danie/OneDrive/Documentos/GitHub/eq1-TerniumRun-unity/Library/ScriptAssemblies/Unity.2D.Path.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>C:/Users/danie/OneDrive/Documentos/Unity Project/Ternium Run/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>C:/Users/danie/OneDrive/Documentos/GitHub/eq1-TerniumRun-unity/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>C:/Users/danie/OneDrive/Documentos/Unity Project/Ternium Run/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>C:/Users/danie/OneDrive/Documentos/GitHub/eq1-TerniumRun-unity/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Animation.Triangle.Runtime">
-      <HintPath>C:/Users/danie/OneDrive/Documentos/Unity Project/Ternium Run/Library/ScriptAssemblies/Unity.2D.Animation.Triangle.Runtime.dll</HintPath>
+      <HintPath>C:/Users/danie/OneDrive/Documentos/GitHub/eq1-TerniumRun-unity/Library/ScriptAssemblies/Unity.2D.Animation.Triangle.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="PsdPlugin">
-      <HintPath>C:/Users/danie/OneDrive/Documentos/Unity Project/Ternium Run/Library/ScriptAssemblies/PsdPlugin.dll</HintPath>
+      <HintPath>C:/Users/danie/OneDrive/Documentos/GitHub/eq1-TerniumRun-unity/Library/ScriptAssemblies/PsdPlugin.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>C:/Users/danie/OneDrive/Documentos/Unity Project/Ternium Run/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>C:/Users/danie/OneDrive/Documentos/GitHub/eq1-TerniumRun-unity/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>C:/Users/danie/OneDrive/Documentos/Unity Project/Ternium Run/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+      <HintPath>C:/Users/danie/OneDrive/Documentos/GitHub/eq1-TerniumRun-unity/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Mathematics">
-      <HintPath>C:/Users/danie/OneDrive/Documentos/Unity Project/Ternium Run/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
+      <HintPath>C:/Users/danie/OneDrive/Documentos/GitHub/eq1-TerniumRun-unity/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Psdimporter.Editor">
-      <HintPath>C:/Users/danie/OneDrive/Documentos/Unity Project/Ternium Run/Library/ScriptAssemblies/Unity.2D.Psdimporter.Editor.dll</HintPath>
+      <HintPath>C:/Users/danie/OneDrive/Documentos/GitHub/eq1-TerniumRun-unity/Library/ScriptAssemblies/Unity.2D.Psdimporter.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.InternalAPIEngineBridge.001">
-      <HintPath>C:/Users/danie/OneDrive/Documentos/Unity Project/Ternium Run/Library/ScriptAssemblies/Unity.InternalAPIEngineBridge.001.dll</HintPath>
+      <HintPath>C:/Users/danie/OneDrive/Documentos/GitHub/eq1-TerniumRun-unity/Library/ScriptAssemblies/Unity.InternalAPIEngineBridge.001.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Sprite.Editor">
-      <HintPath>C:/Users/danie/OneDrive/Documentos/Unity Project/Ternium Run/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+      <HintPath>C:/Users/danie/OneDrive/Documentos/GitHub/eq1-TerniumRun-unity/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Common.Runtime">
-      <HintPath>C:/Users/danie/OneDrive/Documentos/Unity Project/Ternium Run/Library/ScriptAssemblies/Unity.2D.Common.Runtime.dll</HintPath>
+      <HintPath>C:/Users/danie/OneDrive/Documentos/GitHub/eq1-TerniumRun-unity/Library/ScriptAssemblies/Unity.2D.Common.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Tilemap.Editor">
-      <HintPath>C:/Users/danie/OneDrive/Documentos/Unity Project/Ternium Run/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
+      <HintPath>C:/Users/danie/OneDrive/Documentos/GitHub/eq1-TerniumRun-unity/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.SpriteShape.Runtime">
-      <HintPath>C:/Users/danie/OneDrive/Documentos/Unity Project/Ternium Run/Library/ScriptAssemblies/Unity.2D.SpriteShape.Runtime.dll</HintPath>
+      <HintPath>C:/Users/danie/OneDrive/Documentos/GitHub/eq1-TerniumRun-unity/Library/ScriptAssemblies/Unity.2D.SpriteShape.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.PixelPerfect">
-      <HintPath>C:/Users/danie/OneDrive/Documentos/Unity Project/Ternium Run/Library/ScriptAssemblies/Unity.2D.PixelPerfect.dll</HintPath>
+      <HintPath>C:/Users/danie/OneDrive/Documentos/GitHub/eq1-TerniumRun-unity/Library/ScriptAssemblies/Unity.2D.PixelPerfect.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Animation.Editor">
-      <HintPath>C:/Users/danie/OneDrive/Documentos/Unity Project/Ternium Run/Library/ScriptAssemblies/Unity.2D.Animation.Editor.dll</HintPath>
+      <HintPath>C:/Users/danie/OneDrive/Documentos/GitHub/eq1-TerniumRun-unity/Library/ScriptAssemblies/Unity.2D.Animation.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Mathematics.Editor">
-      <HintPath>C:/Users/danie/OneDrive/Documentos/Unity Project/Ternium Run/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
+      <HintPath>C:/Users/danie/OneDrive/Documentos/GitHub/eq1-TerniumRun-unity/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/danie/OneDrive/Documentos/Unity Project/Ternium Run/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>C:/Users/danie/OneDrive/Documentos/GitHub/eq1-TerniumRun-unity/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Common.Editor">
-      <HintPath>C:/Users/danie/OneDrive/Documentos/Unity Project/Ternium Run/Library/ScriptAssemblies/Unity.2D.Common.Editor.dll</HintPath>
+      <HintPath>C:/Users/danie/OneDrive/Documentos/GitHub/eq1-TerniumRun-unity/Library/ScriptAssemblies/Unity.2D.Common.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.InternalAPIEditorBridge.001">
-      <HintPath>C:/Users/danie/OneDrive/Documentos/Unity Project/Ternium Run/Library/ScriptAssemblies/Unity.InternalAPIEditorBridge.001.dll</HintPath>
+      <HintPath>C:/Users/danie/OneDrive/Documentos/GitHub/eq1-TerniumRun-unity/Library/ScriptAssemblies/Unity.InternalAPIEditorBridge.001.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>C:/Users/danie/OneDrive/Documentos/Unity Project/Ternium Run/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>C:/Users/danie/OneDrive/Documentos/GitHub/eq1-TerniumRun-unity/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup></ItemGroup>

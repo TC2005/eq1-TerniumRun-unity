@@ -5,12 +5,13 @@ using UnityEngine.SceneManagement;
 public class clickplay : MonoBehaviour
 {
     public string nombre_escena;
-    public string modo;
     GameObject target;
+    Datos_Partida datosPartida;
     // Start is called before the first frame update
     void Start()
     {
-        
+        target = GameObject.FindGameObjectWithTag("Datos");
+        datosPartida = target.GetComponent<Datos_Partida>();
     }
 
     // Update is called once per frame
@@ -20,13 +21,10 @@ public class clickplay : MonoBehaviour
     }
     private void OnMouseDown()
     {
-        if (modo == "Single")
+        if (!datosPartida.empezado)
         {
             SceneManager.LoadScene(nombre_escena, LoadSceneMode.Single);
         }
-        else if (modo == "Additive")
-        {
-            SceneManager.LoadScene(nombre_escena, LoadSceneMode.Additive);
-        }
+        
     }
 }

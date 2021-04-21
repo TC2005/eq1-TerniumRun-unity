@@ -7,6 +7,9 @@ TagManager:
   - Enemy
   - Volumen
   - Buscador Preguntas
+  - Feedback
+  - Datos
+  - Abretrivias
   layers:
   - Default
   - TransparentFX

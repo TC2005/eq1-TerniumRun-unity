@@ -6,7 +6,7 @@ public class sonido : MonoBehaviour
 {
     public float tiempo;
     public string tipo;
-    NoDestruir volumen;
+    Volumen volumen;
     private GameObject target;
     AudioSource sound;
 
@@ -15,7 +15,7 @@ public class sonido : MonoBehaviour
     {
         sound = GetComponent<AudioSource>();
         target = GameObject.FindWithTag("Volumen");
-        volumen = target.GetComponent<NoDestruir>();
+        volumen = target.GetComponent<Volumen>();
 
         if (tipo == "effect")
         {

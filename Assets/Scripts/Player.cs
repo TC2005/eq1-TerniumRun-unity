@@ -11,6 +11,8 @@ public class Player : MonoBehaviour
     public float speed;
     public float x_max, x_min;
     private bool chiquito;
+    //Objeto datos
+    Datos_Partida datosPartida;
     //Objeto sonido
     public GameObject jumpsound;
     public GameObject destroyjumpsound;
@@ -21,6 +23,8 @@ public class Player : MonoBehaviour
     {
         chiquito = false;
         rb = GetComponent<Rigidbody2D>();
+        GameObject target = GameObject.FindGameObjectWithTag("Datos");
+        datosPartida = target.GetComponent<Datos_Partida>();
     }
 
     // Update is called once per frame
@@ -83,6 +87,7 @@ public class Player : MonoBehaviour
             {
                 Instantiate(hurtsound);
                 vida -= 1f;
+                datosPartida.vida--;
                 if (vida <= 0f)
                 {
                     Destroy(gameObject);

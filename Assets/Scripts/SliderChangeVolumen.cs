@@ -7,14 +7,14 @@ using UnityEngine.UI;
 public class SliderChangeVolumen : MonoBehaviour
 {
     Slider barra;
-    NoDestruir volumen;
+    Volumen volumen;
     private GameObject target;
     public string cambia;
     // Start is called before the first frame update
     void Start()
     {
         target = GameObject.FindWithTag("Volumen");
-        volumen = target.GetComponent<NoDestruir>();
+        volumen = target.GetComponent<Volumen>();
         barra = GetComponent<Slider>();
 
         if (cambia == "effectvolumen")

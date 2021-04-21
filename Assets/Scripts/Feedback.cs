@@ -15,7 +15,6 @@ public class Feedback : MonoBehaviour
         target = GameObject.FindWithTag("Buscador Preguntas");
         datos = target.GetComponent<BuscadorPreguntas>();
         texto = GetComponent<Text>();
-        
     }
 
     // Update is called once per frame
@@ -32,6 +31,7 @@ public class Feedback : MonoBehaviour
     }
     public void clickeado()
     {
+        Time.timeScale = 1f;
         SceneManager.UnloadSceneAsync("Trivia");
     }
 }

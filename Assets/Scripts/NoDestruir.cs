@@ -4,12 +4,10 @@ using UnityEngine;
 
 public class NoDestruir : MonoBehaviour
 {
-    public float effectvolumen;
-    public float musicvolumen;
     GameObject[] target;
     private void Awake()
     {
-        target = GameObject.FindGameObjectsWithTag("Volumen");
+        target = GameObject.FindGameObjectsWithTag(gameObject.tag);
         if(target.Length > 1)
         {
             Destroy(gameObject);

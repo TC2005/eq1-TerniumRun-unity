@@ -6,13 +6,13 @@ using UnityEngine.UIElements;
 public class Sliderchangevolumen : MonoBehaviour
 {
     Slider barra;
-    NoDestruir volumen;
+    Volumen volumen;
     private GameObject target;
     public string cambia;
     void Awake()
     {
         target = GameObject.FindWithTag("Volumen");
-        volumen = target.GetComponent<NoDestruir>();
+        volumen = target.GetComponent<Volumen>();
     }
     // Start is called before the first frame update
     void Start()

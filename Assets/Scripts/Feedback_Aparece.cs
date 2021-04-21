@@ -1,17 +1,22 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class Feedback_Aparece : MonoBehaviour
 {
     RectTransform tam;
     float scl = 0f;
     bool contestadoB = false;
-    public float t; //Tiempo en segundos
+    public float tiempo; //Tiempo en segundos
+    float tiempo_act;
+    float mseg;
+    float mseg_a;
     // Start is called before the first frame update
     void Start()
     {
         tam = GetComponent<RectTransform>();
+        Time.timeScale = 0f;
     }
 
     // Update is called once per frame
@@ -19,9 +24,21 @@ public class Feedback_Aparece : MonoBehaviour
     {
         if (scl < 1f && contestadoB)
         {
-            tam.localScale = new Vector3(scl, scl, scl);
-            scl += Time.deltaTime / t;
+            StartCoroutine("grande");
         }
+    }
+    IEnumerator grande()
+    {
+        mseg = System.DateTime.Now.Millisecond;
+        if (mseg < mseg_a) mseg_a -= 1000;
+        tiempo_act += (mseg - mseg_a) / 1000;
+        transform.localScale = new Vector3(tiempo_act/tiempo, tiempo_act/tiempo, 1f);
+        mseg_a = mseg;
+        if (tiempo_act > tiempo)
+        {
+            transform.localScale = new Vector3(1f, 1f, 1f);
+        }
+        yield return new WaitForSeconds(.1f);
     }
     public void contestado()
     {
