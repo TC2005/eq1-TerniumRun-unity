@@ -35,6 +35,9 @@ public class BuscadorPreguntas : MonoBehaviour
     void Start()
     {
         StartCoroutine("GetText");
+        GameObject target = GameObject.FindGameObjectWithTag("Datos");
+        Datos_Partida datos = target.GetComponent<Datos_Partida>();
+        gameid = datos.idtrivia;
     }
     public void setvalues()
     {

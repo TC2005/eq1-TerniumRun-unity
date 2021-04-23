@@ -1,28 +1,25 @@
 fileFormatVersion: 2
-guid: 54755af69a4d39c4eac40882c8101c48
+guid: ae49b25736928b1478272d71ebdf4c5a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8692098715818667583
-    second: caballero_0
+      213: 1433272165248748246
+    second: caballeromalo_0
   - first:
-      213: 4715174051955430626
-    second: caballero_1
+      213: -6213039775573853438
+    second: caballeromalo_1
   - first:
-      213: 3493516173902168462
-    second: caballero_2
+      213: 531367367467724721
+    second: caballeromalo_2
   - first:
-      213: -2997688469706337188
-    second: caballero_3
+      213: 8477570656650752677
+    second: caballeromalo_3
   - first:
-      213: -3800459706800422924
-    second: caballero_4
+      213: 3354260276900627545
+    second: caballeromalo_4
   - first:
-      213: 5769547107962390765
-    second: caballero_5
-  - first:
-      213: -6079523332629384781
-    second: caballero_6
+      213: -1927260773893837792
+    second: caballeromalo_5
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -120,148 +117,127 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: caballero_0
+      name: caballeromalo_0
       rect:
         serializedVersion: 2
         x: 1
         y: 0
         width: 11
         height: 17
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f3e2005bab980a870800000000000000
-      internalID: 8692098715818667583
+      spriteID: 6da4b14c07104e310800000000000000
+      internalID: 1433272165248748246
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: caballero_1
+      name: caballeromalo_1
       rect:
         serializedVersion: 2
-        x: 15
+        x: 13
         y: 1
         width: 13
         height: 17
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2e451f471d9af6140800000000000000
-      internalID: 4715174051955430626
+      spriteID: 20b3c810e39d6c9a0800000000000000
+      internalID: -6213039775573853438
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: caballero_2
+      name: caballeromalo_2
       rect:
         serializedVersion: 2
-        x: 30
+        x: 27
         y: 0
         width: 10
         height: 17
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e81458263767b7030800000000000000
-      internalID: 3493516173902168462
+      spriteID: 1bfe52f2ecbcf5700800000000000000
+      internalID: 531367367467724721
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: caballero_3
+      name: caballeromalo_3
       rect:
         serializedVersion: 2
-        x: 44
+        x: 39
         y: 0
         width: 11
         height: 17
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c549edf18321666d0800000000000000
-      internalID: -2997688469706337188
+      spriteID: 5a271fb989166a570800000000000000
+      internalID: 8477570656650752677
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: caballero_4
+      name: caballeromalo_4
       rect:
         serializedVersion: 2
-        x: 58
+        x: 52
         y: 1
         width: 13
         height: 17
-      alignment: 5
-      pivot: {x: 1, y: 0.5}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4ffb9f8480e024bc0800000000000000
-      internalID: -3800459706800422924
+      spriteID: 9548dd043f9bc8e20800000000000000
+      internalID: 3354260276900627545
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: caballero_5
+      name: caballeromalo_5
       rect:
         serializedVersion: 2
-        x: 72
+        x: 66
         y: 0
         width: 12
         height: 17
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: de80bfcb68c811050800000000000000
-      internalID: 5769547107962390765
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: caballero_6
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 0
-        width: 83
-        height: 18
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3b13dea5db131aba0800000000000000
-      internalID: -6079523332629384781
+      spriteID: 02c6386898ef045e0800000000000000
+      internalID: -1927260773893837792
       vertices: []
       indices: 
       edges: []
