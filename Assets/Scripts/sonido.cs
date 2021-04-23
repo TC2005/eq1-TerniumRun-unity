@@ -5,6 +5,7 @@ using UnityEngine;
 public class sonido : MonoBehaviour
 {
     public float tiempo;
+    float tiempoa=0f;
     public string tipo;
     Volumen volumen;
     private GameObject target;
@@ -25,12 +26,12 @@ public class sonido : MonoBehaviour
         {
             sound.volume = volumen.musicvolumen;
         }
-        Destroy(gameObject, tiempo);
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        tiempoa += Time.deltaTime;
+        if (tiempoa > tiempo) Destroy(gameObject);
     }
 }

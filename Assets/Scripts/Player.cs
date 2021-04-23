@@ -10,6 +10,7 @@ public class Player : MonoBehaviour
     public float speed;
     public float x_max, x_min;
     private bool chiquito;
+    public bool reponte;
     //Objeto datos
     Datos_Partida datosPartida;
     //Objeto sonido
@@ -17,10 +18,6 @@ public class Player : MonoBehaviour
     public GameObject destroyjumpsound;
     public GameObject hurtsound;
     public GameObject fallsound;
-    //Datos skins
-    public Animation[] animaciones;
-    public Sprite[] sprites;
-    public int skin=0;
     // Start is called before the first frame update
     void Start()
     {
@@ -75,7 +72,7 @@ public class Player : MonoBehaviour
             movement.x *= 0f;
         }
         rb.velocity = new Vector2(movement.x * speed, rb.velocity.y);
-        if (transform.position.y <= -0.4)
+        if (transform.position.y <= -0.4 && reponte)
         {
             transform.position = new Vector3(transform.position.x, -0.28f, 0);
         }
