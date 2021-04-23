@@ -3973,6 +3973,8 @@ MonoBehaviour:
     type: 3}
   fallsound: {fileID: 5200154784478284319, guid: f079c36ab2fed114992877940f1257e2,
     type: 3}
+  animaciones: []
+  sprites: []
 --- !u!61 &1252182170
 BoxCollider2D:
   m_ObjectHideFlags: 0

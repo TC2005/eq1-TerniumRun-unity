@@ -42,6 +42,7 @@ public class Datos_Partida : MonoBehaviour
             empezado = false;
             vida = 1;
         }
+        if (vida > 10) vida = 10;
     }
     public void restart()
     {

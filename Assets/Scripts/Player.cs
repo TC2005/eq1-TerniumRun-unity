@@ -17,6 +17,10 @@ public class Player : MonoBehaviour
     public GameObject destroyjumpsound;
     public GameObject hurtsound;
     public GameObject fallsound;
+    //Datos skins
+    public Animation[] animaciones;
+    public Sprite[] sprites;
+    public int skin=0;
     // Start is called before the first frame update
     void Start()
     {
