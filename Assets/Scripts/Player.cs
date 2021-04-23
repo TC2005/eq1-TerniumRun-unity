@@ -5,7 +5,6 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     Rigidbody2D rb;
-    float vida = 3f;
     public float fuerzasalto = 4.5f;
     public Vector2 movement;
     public float speed;
@@ -81,22 +80,22 @@ public class Player : MonoBehaviour
     {
         if (c.gameObject.tag == "Enemy")
         {
-            if(transform.position.y >= c.transform.position.y)
+            if (transform.position.y >= c.transform.position.y)
             {
                 Instantiate(destroyjumpsound);
                 rb.AddForce(new Vector2(0, fuerzasalto), ForceMode2D.Impulse);
                 Destroy(c.gameObject);
+                datosPartida.penemigos += 15;
             }
             else
             {
                 Instantiate(hurtsound);
-                vida -= 1f;
+                Destroy(c.gameObject);
                 datosPartida.vida--;
-                if (vida <= 0f)
+                if (datosPartida.vida <= 0f)
                 {
                     Destroy(gameObject);
                 }
-                Destroy(c.gameObject);
             }
         }
     }

@@ -35,6 +35,8 @@ public class Respuesta : MonoBehaviour
         Datos_Partida datosPartida = target.GetComponent<Datos_Partida>();
         if (datos.correcta == numero+1)
         {
+            datosPartida.vida += 1;
+            datosPartida.ppreguntas += 200;
             datosPartida.rcorrecto++;
             datosPartida.rhechas++;
             Debug.Log("Correcto");

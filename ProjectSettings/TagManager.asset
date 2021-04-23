@@ -10,6 +10,8 @@ TagManager:
   - Feedback
   - Datos
   - Abretrivias
+  - Tiempo-text
+  - Game Over - cuadro
   layers:
   - Default
   - TransparentFX

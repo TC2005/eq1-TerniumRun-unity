@@ -5,29 +5,20 @@ using UnityEngine.UI;
 
 public class puntos_incr : MonoBehaviour
 {
-    public float segf;
-    private int segi;
-    private int lsegi;
     private Text msg;
     private string textstr;
-
+    Datos_Partida datosPartida;
     // Start is called before the first frame update
     void Start()
     {
-        segf = 0f;
-        segi = 0;
+        GameObject target = GameObject.FindGameObjectWithTag("Datos");
+        datosPartida = target.GetComponent<Datos_Partida>();
         msg = GetComponent<Text>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        segf += Time.deltaTime;
-        segi = (int)segf;
-        if (lsegi != segi)
-        {
-            msg.text = segi.ToString()+ "seg";
-        }
-        lsegi = segi;
+        msg.text = ((int)datosPartida.tiempo).ToString()+ "seg";
     }
 }

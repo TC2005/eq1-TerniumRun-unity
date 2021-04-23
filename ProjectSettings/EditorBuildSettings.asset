@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Trivia.unity
     guid: 889b39d8e216a5a459adef4d74a5a6cc
+  - enabled: 1
+    path: Assets/Scenes/Game Over.unity
+    guid: ae827aa7dbed60645ae70fe937f27529
   m_configObjects: {}

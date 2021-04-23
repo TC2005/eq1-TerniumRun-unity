@@ -78,13 +78,14 @@
     <Compile Include="Assets\Scripts\Volumen.cs" />
     <Compile Include="Assets\Scripts\abrirTrivia.cs" />
     <Compile Include="Assets\Scripts\barratiempo.cs" />
+    <Compile Include="Assets\Scripts\botontipo.cs" />
     <Compile Include="Assets\Scripts\clickplay.cs" />
     <Compile Include="Assets\Scripts\moveAdorno.cs" />
     <Compile Include="Assets\Scripts\moveEnemigo.cs" />
     <Compile Include="Assets\Scripts\moveObject.cs" />
     <Compile Include="Assets\Scripts\puntos_incr.cs" />
     <Compile Include="Assets\Scripts\sonido.cs" />
-    <Compile Include="Assets\botontipo.cs" />
+    <Compile Include="Assets\Scripts\textopuntos.cs" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>

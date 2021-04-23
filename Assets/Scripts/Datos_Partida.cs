@@ -16,20 +16,31 @@ public class Datos_Partida : MonoBehaviour
     public int penemigos, pdistancia, ppreguntas;
     public bool empezado;
     public int vida;
+    public GameObject cora;
+    SpriteRenderer corarender;
     // Start is called before the first frame update
     void Start()
     {
+        corarender = cora.GetComponent<SpriteRenderer>();
         restart();
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (empezado && tipo == "Normal")
+        {
+            tiempo += Time.deltaTime;
+            pdistancia = (int)tiempo * 10;
+        }
+        
+        corarender.size = new Vector2(vida*0.18f,0.165f);
         if (vida == 0)
         {
             Debug.Log("Se han reiniciado los datos");
-            SceneManager.LoadScene("Pantalla de inicio", LoadSceneMode.Single);
-            restart();
+            SceneManager.LoadScene("Game Over", LoadSceneMode.Additive);
+            empezado = false;
+            vida = 1;
         }
     }
     public void restart()

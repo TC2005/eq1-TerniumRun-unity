@@ -33,5 +33,6 @@ public class clickplay : MonoBehaviour
                 volumen.actualizaenBD();
             }
         }
+        if (gameObject.tag == "Game Over - cuadro") datosPartida.restart();
     }
 }
