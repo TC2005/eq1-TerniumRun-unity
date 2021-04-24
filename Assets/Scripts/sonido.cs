@@ -32,6 +32,14 @@ public class sonido : MonoBehaviour
     void Update()
     {
         tiempoa += Time.deltaTime;
-        if (tiempoa > tiempo) Destroy(gameObject);
+        if (tiempoa > tiempo && tiempo>0) Destroy(gameObject);
+        if (tipo == "effect")
+        {
+            sound.volume = volumen.effectvolumen;
+        }
+        else if (tipo == "music")
+        {
+            sound.volume = volumen.musicvolumen;
+        }
     }
 }

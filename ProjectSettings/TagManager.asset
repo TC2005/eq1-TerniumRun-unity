@@ -12,6 +12,7 @@ TagManager:
   - Abretrivias
   - Tiempo-text
   - Game Over - cuadro
+  - Musica
   layers:
   - Default
   - TransparentFX
