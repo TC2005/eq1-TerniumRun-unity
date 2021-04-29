@@ -3297,7 +3297,7 @@ MonoBehaviour:
   fechayhora: 
   idjugador: 1
   idtrivia: 1
-  email: test@tec.mx
+  email: admin
   tipo: 
   tiempo: 0
   rhechas: 0
@@ -5889,7 +5889,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   effectvolumen: 0.5
   musicvolumen: 0.5
-  email: admin@tec.mx
+  email: admin
 --- !u!1 &1990067545
 GameObject:
   m_ObjectHideFlags: 0
