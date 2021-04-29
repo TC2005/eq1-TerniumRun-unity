@@ -68,14 +68,14 @@ public class Volumen : MonoBehaviour
     {
         string url = "http://localhost:5000/auth/set-effect-volumen";
         WWWForm form = new WWWForm();
-        form.AddField("email", "admin@tec.mx");
+        form.AddField("email", email);
         form.AddField("effectVolumen", effectvolumen.ToString());
         UnityWebRequest www = UnityWebRequest.Post(url, form);
 
 
         string url2 = "http://localhost:5000/auth/set-music-volumen";
         WWWForm form2 = new WWWForm();
-        form2.AddField("email", "admin@tec.mx");
+        form2.AddField("email", email);
         form2.AddField("musicVolumen", musicvolumen.ToString());
         UnityWebRequest www2 = UnityWebRequest.Post(url2, form2);
 
